@@ -1,0 +1,118 @@
+
+.profile-top {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    background-color: rgba(64, 62, 72, 0.534);
+}
+
+.profile-picture{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    object-fit: cover;
+    aspect-ratio: 1;
+    box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.58);
+}
+
+.profile-details {
+    margin-left: 20px;
+    padding: 20px 50px 20px 50px;
+    color: white;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    
+}
+
+.profile-details h1 {
+    margin: 0;
+    width: 100%;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.bio {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+
+}
+
+.follow-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.followers,
+.following {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.followers strong,
+.following strong {
+    display: block;
+    font-size: 1rem;
+    color: #e96711;
+}
+
+.followers span,
+.following span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 5px;
+    color: rgb(245, 243, 243);
+}
+
+.aProfile-all-buttons{
+    display: flex;
+    margin-top: 15px;
+}
+.aProfile-follow-button{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin-right: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: small;
+    cursor: pointer;
+}
+.aProfile-follow-button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width:600px){
+    .profile-top {
+        flex-direction: column;
+        height: 100%;
+    }
+    .profile-details {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+}

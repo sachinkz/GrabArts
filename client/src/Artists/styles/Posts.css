@@ -1,0 +1,15 @@
+.post-items-div {
+  position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+@media (max-width:675px){
+  .post-items-div{
+    max-width: 15rem;
+  }
+}
+@media (max-width:520px){
+  .post-items-div{
+    max-width: 11rem;
+  }
+}

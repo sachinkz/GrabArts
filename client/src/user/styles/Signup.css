@@ -1,0 +1,219 @@
+.page{
+    background-color: black;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -60px;
+    padding-top: 30px;
+}
+@media(max-width:500px){
+
+}
+.signupPage{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+
+
+.signupItems{
+    border: solid gray;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+
+.signupForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.loginBtn{
+    height: 40px;
+    width: 220px;
+    margin-top: 15px;
+    max-width: 300px ;
+    min-width: 150px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    font-weight: 800;
+    cursor: pointer;   
+
+}
+.loginBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.signUpBtn{
+    margin: 20px;
+    height: 40px;
+    width: 220px;
+    max-width: 300px ;
+    min-width: 150px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    font-weight: 800;
+    cursor: pointer;   
+
+}
+.signUpBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+input[type="text"] {
+  padding-left: 15px;
+  font-weight: 400;
+    font-size: 13px;
+
+  letter-spacing: 2px;
+}
+input[type="number"] {
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+input[type="email"] {
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+
+input[type="password"] {
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+
+
+
+.name{
+    height: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-family: codystar;
+    color: white;
+}
+
+
+
+.medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    height: 10px;
+    width: 100%;
+
+}
+
+
+
+.social{
+    width: 25px;
+    cursor: pointer;   
+    color: white;
+}
+.social:hover{
+    font-size: larger;
+    position: relative;
+}
+
+
+
+
+
+h3{
+    color: white;
+    height: 10px;
+}
+
+
+.icon{
+    color:rgb(255, 247, 4);
+    font-size: 30px;
+}
+.head{
+    margin-bottom: 15px;
+    font-size:15px;
+}
+hr{
+    width: 100%;
+    background-color: aliceblue;
+}
+.logo{
+    margin-left: 50px;
+}
+.motto{
+    text-transform: uppercase;
+    font-family: 'Codystar', cursive;
+    font-weight: 600;
+    text-align: center;
+}
+.about{
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    min-height: 95vh;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;  
+    
+}
+
+.container{
+    background-color: rgba(27, 26, 26, 0.792);
+    color: rgb(148, 147, 147);
+    width: fit-content;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    margin-top: 60px;
+    border-radius: 15px;
+
+}

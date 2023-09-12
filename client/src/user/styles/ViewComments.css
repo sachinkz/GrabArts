@@ -1,0 +1,30 @@
+.view-comments-box{
+    color: white;
+    background-color: rgb(24, 24, 24);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+.view-comments-box .commentor-name{
+    color: rgb(233, 233, 0);
+    min-width: fit-content;
+}
+.write-comment-box{
+    margin: 0 0 30px 10px;
+    width: 100%;
+}
+.write-comment-box button{
+    margin-left: 10px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 60px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.write-comment-box button:hover{
+    background-color: white;
+    color: black;
+}

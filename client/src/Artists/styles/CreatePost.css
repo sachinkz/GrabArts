@@ -1,0 +1,239 @@
+
+.aPost-file-input{
+    background-color:  rgb(31, 31, 31);
+    box-shadow: 2px 2px 30px 10px rgb(0, 0, 0);
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+}
+.aPost-fileupload-heading{
+    margin: 20px;
+}
+.aPost-image-file{
+    max-width: 60%;
+    margin: 30px;
+}
+.aPost-other-btns{
+  margin-right: 20px;
+  border: none;
+  height: 30px;
+  background: #9c4109;
+  padding: 3px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+.aPost-other-btns:hover{
+  background: #005eff;
+  border: 1px solid;
+}
+
+.aPost-Caption-pageheader{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 20px;
+    width: 98%;
+    position: absolute;
+    top: 10px;
+}
+.aPost-post-btn{
+    background-color: rgb(13, 83, 164);
+    color: white;
+    padding: 5px;
+    font-size: small;
+    border: none;
+    border-radius: 8px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.aPost-back-btn{
+    background-color: rgb(13, 83, 164);
+    color: rgb(255, 255, 255);
+    font-size: large;
+    border: none;
+    border-radius: 8px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aPost-image-display{
+    width: 65%;
+    min-height: 400px;
+    margin-top: 40px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.aPost-all-file-input-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aPost-file-input-button-div{
+    position: relative;
+    width: 150px;
+}
+.aPost-file-input-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    margin-left: 13px;
+    height: 200px;
+    opacity: 1;
+    height: 80px;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.aPost-fileinput-drop-container {
+  min-height: 60vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #7e7c7c;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s ease-in-out, border .2s ease-in-out;
+}
+.deliverydetails-input-image-and-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.aPost-other-btns-upload{
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    
+}
+.aPost-displayimage-file{
+    width: 100%;
+}
+.aPost-close-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.aPost-other-btns-cancel{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: xx-large;
+
+}
+.aPost-other-btns-next{
+    background-color: rgb(59, 59, 255);
+    border: none;
+    width: 70px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.aPost-other-btns-reset{
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+    color: white;
+    
+}
+.aPost-image-and-caption{
+    width: 100%;
+    display: flex;
+}
+.aPost-caption-input{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+.aPost-caption-input-field{
+    width: 100%;
+    background-color: rgb(28, 28, 28);
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.aPost-caption-input-username{
+    margin-top: 20px;
+    color: rgb(192, 188, 188);
+}
+
+@media(max-width:750px) {
+    .aPost-image-display{
+    width: 100%;
+    margin-top: 30px;
+}
+.aPost-caption-input{
+    width: 100%;
+    height: 150px;
+    margin-left: unset;
+}
+.aPost-Caption-pageheader h4{
+    font-size: medium;
+    margin-top:5px;
+}
+.aPost-file-input{
+    width: 95%;
+}
+.aPost-fileupload-heading{
+    font-size: large;
+}
+.aPost-image-and-caption{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+    .aPost-Caption-pageheader h4{ 
+    display: none;
+    bottom: 0px;
+}
+    .aPost-Caption-pageheader{ 
+    bottom: 10px;
+    top: unset;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+.aPost-image-display{
+    min-height: unset;
+    margin-top: unset;
+}
+.aPost-caption-input{
+    min-height: unset;
+    padding: unset;
+}
+}
+
+@media(max-width:400px) {
+
+.aPost-image-display{
+    margin-top: 0;
+}
+.aPost-file-input{
+    min-height: unset;
+    font-size: small;
+}
+}

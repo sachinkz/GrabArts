@@ -1,0 +1,21 @@
+.aProfile-main-div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: -60px;
+    background-color: rgb(31, 30, 30);
+}
+
+@media(max-width:1265px) {
+    .aProfile-main-div{
+    width: 95%;
+    margin-left: 5%;
+}
+}
+@media(max-width:500px) {
+    .aProfile-main-div{
+    width: 100%;
+    margin-left: 0;
+}
+}

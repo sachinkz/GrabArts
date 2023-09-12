@@ -1,0 +1,19 @@
+    .about-page {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      padding: 50px;
+      background-color: rgb(23, 22, 22);
+    }
+    .about-page__heading{
+      color: #e2d9d9;
+      text-align: center;
+    }
+     .about-page__items{
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #e2d9d9;
+      text-align: center;
+    }
+
+
+    

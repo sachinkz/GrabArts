@@ -1,0 +1,128 @@
+.My-orders-main{
+    width: 100%;
+    padding: 60px 5%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+.My-orders-EachOrders{
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    min-height: 200px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.My-orders-image-and-details{
+    width: 65%;
+    height: 100%;
+    min-height: 180px;
+    background-color: bisque;
+}
+.My-orders-image-and-details{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.My-orders-image-and-details img{
+    width: 15%;
+    aspect-ratio: 1;
+}
+.My-orders-order-details {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+.My-orders-order-details-item {
+    color: rgb(158, 155, 155);
+    font-size: large;
+    font-style: italic;
+    text-align: right;
+}
+.My-orders-order-details-span {
+    font-size: large;
+    margin-left: 5px;
+    color: white;
+    font-style: italic;
+}
+.My-orders-order-details-headings{
+    width: 30%;
+    height: 100%;
+}
+.My-orders-order-details-span-values{
+    width: 70%;
+    height: 100%;
+    margin-left: 5px;
+}
+
+
+.My-orders-order-status{
+    width: 30%;
+    height: 100%;
+}
+.My-orders-order-status-note{
+    background-color: green;
+    height: 100%;
+    padding-left: 5%;
+}
+.My-orders-order-status-date{
+    font-size: small;
+    margin-top: 50px;
+    text-align: center;
+}
+.My-orders-order-status-date span{
+    color: orange;
+}
+
+
+@media(max-width:800px){
+    .My-orders-order-details-item {
+    color: white;
+    font-size: medium;
+}
+.My-orders-order-status-note{
+    font-size: large;
+}
+.My-orders-order-details-span {
+    font-size: medium;
+    margin-left: 5px;
+    color: white;
+}
+}
+
+
+@media(max-width:500px){
+    .My-orders-order-details-item {
+    color: white;
+    font-size: small;
+    
+}
+.My-orders-order-details-span {
+    font-size: small;
+    margin-left: 5px;
+    color: white;
+}
+.My-orders-order-status-note{
+    font-size: small;
+}
+}
+
+.My-orders-empty-style{
+    width: 5%;
+}
+.My-orders-empty-style .My-orders-order-status-date{
+    color: transparent;
+}
+
+.My-orders-no-orders{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(23, 23, 23);
+    color: white;
+}

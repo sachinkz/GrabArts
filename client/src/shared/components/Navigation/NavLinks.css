@@ -1,0 +1,97 @@
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 1rem;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.nav-links a {
+  border: 1px solid transparent;
+  color: #a4a4a4;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #6b6b67;
+  transform: scale(1.2) ;
+}
+
+.nav-links button {
+  cursor: pointer;
+  border: 1px solid #292929;
+  color: #292929;
+  background: transparent;
+  padding: 0.5rem;
+  font: inherit;
+}
+
+.nav-links button:focus {
+  outline: none;
+}
+
+.nav-links button:hover,
+.becomeanartist:hover,
+.nav-links button:active {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links button {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+  }
+  
+  
+  .nav-links button:hover,
+  .becomeanartist:hover,
+  .nav-links button:active {
+    color: #292929;
+  }
+}
+.loggedIn-username{
+  cursor: pointer;
+  font-size: medium;
+  margin-bottom: 27px;
+}
+.loggedinusername{
+  font-size: large;
+  color: white;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.becomeanartist{
+  font-size: medium;
+  color: white;
+  font-weight: 400;
+  margin-top: 8px;
+  cursor: pointer;
+}

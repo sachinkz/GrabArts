@@ -1,0 +1,43 @@
+.card {
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(8, 8, 8, 0.26);
+  padding: 1rem;
+  overflow: hidden;
+  background: rgb(32, 29, 29);
+}
+.artist-details-card{
+  width: 100vw;
+  padding: 20px 50px;
+}
+.aProfile-artists-posts-card{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 20px 10%;
+
+}
+/* @media (max-width:1200px){
+  .artists-posts-card{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+    .artists-posts-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+
+
+@media (max-width: 1000px) {
+    .aProfile-artists-posts-card{
+        padding: 0; 
+    }
+}
+@media (max-width: 780px) {
+    .aProfile-artists-posts-card{
+        padding: 0; 
+        gap: 5px;
+    }
+}

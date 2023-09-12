@@ -1,0 +1,21 @@
+table{
+    color: white;
+    border: 1px solid white;
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+
+}
+.total-table-box table th{
+    width: 20%;
+    border: 1px solid white;
+
+}
+.total-table-box .style-name{
+    color: rgb(68, 247, 13);
+    text-align: center;
+}
+.total-table-box table td{
+        border: 1px solid white;
+    
+}

@@ -1,0 +1,151 @@
+.loginPage{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: -60px;
+}
+
+
+
+.loginItems{
+    border: solid rgb(77, 74, 74);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+.emailPass{
+    background-color: black;
+    height: 40px;
+    width: 250px;
+    max-width: 300px ;
+    min-width: 150px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    position: relative;
+
+}
+
+
+
+.loginBtn{
+    height: 40px;
+    width: 220px;
+    max-width: 300px ;
+    min-width: 150px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    font-weight: 800;
+    cursor: pointer;   
+
+}
+.loginBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.signUpBtn{
+    margin: 20px;
+    height: 40px;
+    width: 220px;
+    max-width: 300px ;
+    min-width: 150px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    font-weight: 800;
+    cursor: pointer;   
+
+}
+.signUpBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+.forgot{
+    text-decoration: none;
+    color: rgb(121, 120, 120);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.forgot:hover{
+    color: aliceblue;
+}
+.heading{
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.login-page-subheading{
+    font-size: medium;
+}
+
+#signInDiv{
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 100%;
+    margin-top: 20px;
+    opacity: 0.5;
+}
+
+
+
+.medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+
+
+.social{
+    width: 25px;
+    cursor: pointer;   
+    color: white;
+    margin-bottom: 10px;
+}
+.social:hover{
+    font-size: larger;
+    position: relative;
+}
+
+.input-field-and-icon{
+    position: relative;
+}
+.input-field-and-icon i{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+.toggle-pass {
+  cursor: pointer;
+  font-size: x-small;
+  color: aliceblue;
+}

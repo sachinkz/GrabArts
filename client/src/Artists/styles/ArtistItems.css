@@ -1,0 +1,84 @@
+.artist-item {
+  margin: 1rem;
+  margin-top: 20px;
+  width: calc(45% - 5rem);
+  min-width: 17.5rem;
+  transition: transform 0.2s ease;
+  font-size: medium;
+}
+.artist-item:hover{
+  transform: scale(1.01);
+  border: none;
+}
+.artist-item__info{
+  text-align: left;
+  width: 60%;
+}
+.artist-item a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: #bdbdbd;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #161616;
+}
+
+.artist-item a:hover,
+.artist-item a:active {
+  background: #282828;
+  border: none;
+}
+
+.artist-item__content {
+  padding: 0;
+}
+
+.artist-item__image {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.artist-item__info h2 {
+  font-size: 1.2em;
+  max-width: 250px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.artist-item:hover h2,
+.artist-item:active h2,
+.artist-item:hover h4,
+.artist-item:active h4,
+.artist-item:hover h5,
+.artist-item:active h5 {
+  color: #ffffff;
+}
+
+.artist-item__info h3 {
+  margin: 0;
+  font-size: medium;
+}
+.artists-box__all-works{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(54, 53, 53, 0.774);
+}
+.artists-box__works{
+    width: 50%;
+  height: 50%;
+  padding: 5px;
+}
+
+
+.artists-box__works img{
+  width: 100%;
+  height: 130PX;
+}
+.artist-item__info h2 i{
+  color: #ffff00;
+  margin-left: 6px;
+} 

@@ -1,0 +1,196 @@
+.order-page{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding:50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.order-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.orderpage-inputlabel{
+  color: rgb(156, 155, 155);
+  margin-top: 25px;
+  font-style: italic;
+  
+}
+.image-and-closeBtn{
+  position: relative;
+}
+.orderPage-image-file{
+  width: 200px;
+  margin-bottom: 30px;
+}
+.imagecloseBtn{
+  position:absolute;
+  top: 0;
+  right: 0;
+  font-size: xx-large;
+  color: white;
+}
+.orderpage-errortext{
+  color: red;
+  font-style: italic;
+  text-align: center;
+}
+.orderpage-inp-field{
+  background-color: rgba(50, 162, 30, 0.073);
+  border: 2px solid white;
+  border-radius: 8px;
+  min-width: 200px;
+  width: 60%;
+  padding: 5px;
+  color: white;
+}
+input[type=file]{
+  display: none;
+}
+.input-field-and-icon{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+  margin-top: 40px;
+  
+}
+
+.click-here-text{
+  margin-bottom: 40px;
+  color: rgb(36, 198, 52);
+}
+.paper-size-select{
+  background-color: rgba(50, 162, 30, 0.073);
+  color: rgb(211, 211, 211);
+  border-radius: 8px;
+  min-width: 200px;
+  width: 60%;
+  height: 40px;
+  border: 2px solid rgb(214, 214, 214);
+
+}
+.paper-size-select option{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.paper-size-select option:hover{
+  background-color: rgb(28, 28, 28);
+}
+.drop-container {
+  background-size: 100px;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #7e7c7c;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s ease-in-out, border .2s ease-in-out;
+}
+
+
+.drop-container:hover {
+  background-color: rgb(16, 16, 16);
+  border-color: #626262;
+  color: white;
+}
+
+.drop-container:hover .drop-title {
+  color: white;
+}
+
+.drop-title {
+  color: #fdfcfc;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color .2s ease-in-out;
+  margin-bottom:30px;
+}
+
+.all-fields{
+    width: 80%;
+    margin: auto;
+    background-color: #0b0b0b;
+    color: rgb(147, 144, 144);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+  }
+
+  .input-field-and-icon{
+    width: 100%;
+  }
+  .orderpage-submitbtn{
+    background-color: transparent;
+    color: white;
+    font-weight: 800;
+    margin-top: 20px;
+    border: 2px solid white;
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  .orderpage-submitbtn:hover{
+    background-color: white;
+    color: black;
+
+  }
+
+   @media(max-width:850px){
+    .orderpage-inp-field{
+      width: 100%;
+}
+.paper-size-select{
+  width: 100%;
+}
+   }
+  @media(max-width:500px){
+    .all-fields{
+      width: 100%;
+    }
+    .drop-container{
+      margin: 0;
+      padding: 20;
+    }
+    .order-page{
+      padding: 20px;
+    }
+  }
+
+.orderBtn:hover{
+  background: #26292d;
+  border: 1px solid;
+}
+.all-fields input{
+    background-color: rgb(26, 25, 25) ;
+    width: 100%;
+    margin: 10px auto;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    
+}
+#inputState{
+    background-color: black;
+}
+.email-input{
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

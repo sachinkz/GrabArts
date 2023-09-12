@@ -1,0 +1,537 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Lexend+Peta&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.aHome-main-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    margin-top: -60px;
+}
+.aHome-feeds{
+    width: 65%;
+    padding-left: 14%;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+}
+
+.aHome-search-section{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(39, 38, 38);
+}
+.aHome-search-section form{
+    width: 100%;
+    display: flex;
+}
+.aHome-feeds::-webkit-scrollbar{
+    background-color: rgb(45, 45, 45);
+    width: 4px;
+}
+.aHome-feeds::-webkit-scrollbar-thumb{
+    background-color: rgb(83, 81, 81);
+    border-radius: 10px;
+}
+.aHome-feeds::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(192, 189, 189);
+}
+
+.aHome-single-feed{
+    width:90%;
+    background-color: rgb(31, 32, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 10px;
+    box-shadow: 2px 2px 50px 2px rgb(0, 0, 0);
+}
+.aHome-feed-header{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(16, 9, 30, 0.573);
+}
+.aHome-feed-header i{
+    color: rgb(197, 77, 2);
+    font-size: larger;
+    margin-bottom: 6px;
+}
+
+.aHome-avatar-img{
+    width: 30px;
+    height: 30px;
+    min-width: 28px;
+    border-radius: 50%;
+
+}
+.aHome-user-name{
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    margin-left: 4%;
+    letter-spacing: -1px;
+}
+.aHome-post-img img{
+    width: 100%;
+    min-width: 345px;
+    object-fit: cover;
+}
+
+
+.aHome-feed-footer{
+    background-color: rgb(21, 20, 21);
+    width: 100%;
+    height: 40px;
+    padding: 5% 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.aHome-feed-footer i{
+    font-size: xx-large;
+    color: white;
+    cursor: pointer;
+}
+
+.aHome-likes-count{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    color: rgb(174, 173, 172);
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    padding-left: 5%;
+    text-align: left;
+    background-color: rgb(16, 16, 16);
+}
+.aHome-likes-count h3{
+    font-size: small;
+     margin-left: 3px;
+     
+}
+
+.aHome-feed-caption{
+    width: 100%;
+    padding-top: 15px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+}
+.caption{
+    font-weight: 400;
+    color: rgb(174, 174, 167);
+    letter-spacing: -1px;
+}
+.aHome-feed-comments{
+    min-height: 40px;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.aHome-feed-comments form{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+}
+
+.aHome-type-comment{
+    width: 80%;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 3px 0px 3px 15px;
+    background-color: rgb(54, 55, 56);
+}
+.aHome-post-comment{
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    background-color: rgb(54, 55, 56);
+    color: white;
+    margin-left: 10px;
+}
+.aHome-feed-postedcomments{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+}
+.aHome-each-comment{
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    border-radius: 4px;
+    margin-top: 2px;
+    padding: 5px;
+    
+}
+.aHome-each-comment h4{
+    letter-spacing: 1px;
+}
+.aHome-each-comment span{
+    letter-spacing: 0px;
+}
+
+/* -----------styles for suggestions on the right side container and follow buttons ---------------------- */
+
+
+.aHome-suggestions{
+    width: 35%;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    flex-direction: column;
+}
+.aHome-suggestions-box{
+    margin-top: 100px;
+    width: 90%;
+    background-color: rgb(75, 74, 74);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aHome-suggestions-header{
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.aHome-suggestions-header h3{
+    color: white;
+    text-align: center;
+    font-size: medium;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.aHome-suggested-user{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(37, 36, 36);
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    position: relative;
+}
+.aHome-suggested-user h3{
+    font-size: small;
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+.aHome-suggested-user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.aHome-suggested-user i{
+    color: rgb(197, 77, 2);
+    font-size: medium;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.aHome-follow-btndiv{
+    z-index: 2;
+    position: absolute;
+    right: 3px;
+}
+.aHome-follow-button{
+    padding: 2px 10px;
+    height: 30px;
+    background-color: rgb(116, 51, 201);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+}
+
+
+/* --------------------styles for navlinks of the sidebar menu-------------------------------------- */
+
+.aHome-navlinks{
+    background-color: rgb(28, 28, 28);
+    height: 100vh;
+    max-width: 180px;
+    position : fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 5px 60px 5px;
+    justify-content: space-between;
+    z-index: 1000;
+    border-right: 1px solid rgb(47, 46, 46);
+}
+
+.aHome-navlinks-topitems{
+    display: flex;
+    flex-direction: column;
+}
+.aHome-navlinks-bottomitems{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.aHome-navlinks-eachitems{
+    display: flex;
+    margin-top: 25px;
+    cursor: pointer;
+    padding-top:6px;
+    padding-left: 6px;
+}
+.aHome-navlinks-eachitems:hover{
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+
+    .aHome-navlinks-icons{
+    color: rgb(15, 15, 15);
+}
+.aHome-navlinks-items-link{
+    text-decoration: none;
+    color: black;
+}
+}
+.aHome-navlinks-items{
+    font-size: medium;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.aHome-navlinks-items-link{
+    text-decoration: none;
+    color: white;
+}
+
+.aHome-navlinks-icons{
+    color: white;
+    font-size: larger;
+
+}
+
+.aHome-logo{
+    color: white;
+    font-size: 25px;
+    letter-spacing: -3px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+
+/* -----------------styles for the footer element includes links and copyright--------------------------- */
+
+
+
+.aHome-footer{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.aHome-footer-links{
+    color: rgb(81, 79, 79);
+    font-size: smaller;
+    margin-right: 10px;
+}
+.aHome-footer-copyrights{
+    font-size: small;
+    color: rgb(81, 79, 79);
+}
+ 
+
+
+.aPost-whole-post-form{
+    z-index: 20;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 25%;
+    
+}
+
+
+/*------------------------ media styles for different screen sizes -------------------*/
+
+
+
+@media(max-width:1265px){
+    .aHome-navlinks{
+        width: 60px;
+    }
+    .aHome-navlinks-items{
+        display: none;
+    }
+    .aHome-navlinks-eachitems{
+        justify-content: center;
+    }
+
+.aHome-feeds{
+    width: 65%;
+    align-items: end;
+    padding-left: 7%;
+}
+.aHome-logo{
+    display: none;
+}
+}
+
+@media(max-width:1000px){
+    .aHome-suggestions{
+        display: none;
+}
+.aHome-feeds{
+        width: 100%;
+        align-items: center;
+}
+.aHome-single-feed{
+        width: 70%;
+    }
+.aHome-navlinks{
+        width: 60px;
+    }
+    .aPost-whole-post-form{
+    width: 70%;
+    margin:15% 15%;
+}
+}
+
+
+
+@media(max-width:780px){
+    .aHome-feeds{
+        width: 100%;
+        padding-left: 14%;
+    }
+    .aHome-single-feed{
+        width: 80%;
+    }
+    .aHome-post-img img{
+    min-width: auto;
+    }
+    .aHome-feed-footer i{
+    font-size: 25px;
+}
+.aHome-user-name{
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.aHome-avatar-img{
+    width: 30px;
+    height: 30px;
+}
+.aHome-navlinks{
+        width: 10%;
+        max-width: 60px;
+    }
+    .aHome-likes-count h3{
+    font-size: 0.7em;
+     margin-left: 2px;
+     
+}
+.aPost-whole-post-form{
+    left: unset;
+    right: unset;
+}
+   .aPost-whole-post-form{
+    width: 85%;
+    margin: 15% 8%;
+}
+}
+
+@media(max-width:500px){
+    .aHome-feeds{
+        width: 100%;
+        padding-left: 6%;
+    }
+    .aHome-single-feed{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    .aHome-post-img img{
+    min-width: auto;
+    }
+    .aHome-user-name{
+    font-size: x-small;
+    font-weight: 600;
+}
+   .aHome-feed-footer i{
+    font-size: 18px;
+}
+.aHome-post-comment{
+    width:40px;
+}
+.aHome-avatar-img{
+    min-width: 20px;
+    min-height: 20px;
+}
+.aHome-navlinks{
+    height: 35px;
+    width: 100vw;
+    max-width: unset;
+    position : fixed;
+    left: 0;
+    top: unset;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding: 0 15px 0 15px;
+    
+}
+.aHome-navlinks-topitems{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aHome-navlinks-eachitems{
+    margin-top: 0;
+}
+.aHome-navlinks-bottomitems{
+    display: none;
+}
+    .aHome-type-comment{
+        height: 25px;
+        font-size: xx-small;
+        letter-spacing: 0;
+        padding: 3px;
+    }
+    .aHome-feed-header i{
+    font-size: small;
+    margin-bottom: 8px;
+}
+.aHome-likes-count h3{
+    font-size: 0.5em;
+     margin-left: 2px;
+     
+}
+  .aPost-whole-post-form{
+    width: 95%;
+    margin: 15% 5%;
+}
+}

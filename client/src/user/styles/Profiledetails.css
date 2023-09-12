@@ -1,0 +1,70 @@
+.artist-alldetails-area{
+    color: white;
+    background-color: rgb(49, 48, 48);
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.profile-page-avatar{
+}
+.artist-alldetails-area{
+    width: 100%;
+}
+.artist-detials-area_name{
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+@media (max-width: 680px){
+    .artist-alldetails-area{
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .artist-detials-area{
+        position: unset;
+    }
+}
+.order-buttons-div{
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ordering-btn{
+    height: 40px;
+    margin: 20px;
+    width: 200px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.ordering-btn:hover{
+    background-color: white;
+    color: black;
+}
+.artist-detais-styleslist{
+    display: flex;
+}
+
+.artist-detials-bio{
+    font-size: medium;
+    margin-bottom: 20px;
+}
+.artist-detials-pricing{
+    font-size: medium;
+}
+.artist-detials-rating{
+    font-size: medium;
+}
+.artist-detials-style{
+    font-size: medium;
+    margin-right: 8px;
+}
+.ratingstatr{
+    color: yellow;
+}

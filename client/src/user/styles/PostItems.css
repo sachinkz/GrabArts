@@ -1,0 +1,33 @@
+.aProfile-work-item__content {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  aspect-ratio: 1;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 25px 2px rgb(0, 0, 0);
+}
+
+.aProfile-work-item__image img {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1); 
+    transition: transform 0.3s ease;
+}
+.aProfile-work-item__content:hover .aProfile-work-item__image img {
+    transform: scale(1.03); 
+}
+
+
+@media (max-width:460px){
+  
+
+}
+

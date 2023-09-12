@@ -1,0 +1,254 @@
+.My-works-main{
+    height: 100%;
+    min-height: 100vh;
+    background-color: black;
+    margin-top: -60px;
+    padding-left: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.My-works-btn-nav-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.My-works-accepted-works-btn{
+    width: 20%;
+    height: auto;
+    font-weight: 800;
+    color: white;
+    padding: 8px;
+    border: 3px solid white;
+    background-color: transparent;
+}
+.My-works-req-works-btn{
+    width: 20%;
+    height: auto;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border: 3px solid white;
+    background-color: transparent;
+}
+.My-works-req-works-btn:hover,
+.My-works-req-works-btn-active{
+    width: 20%;
+    height: auto;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border: 3px solid white;
+    background-color: white;
+}
+.My-works-accepted-works-btn:hover,
+.My-works-accepted-works-btn-active{
+     width: 20%;
+    height: auto;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    height: auto;
+    border: 3px solid white;
+    background-color: white;
+}
+.My-work-EachOrders{
+    margin-left: 170px;
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+
+}
+.My-work-image-and-details{
+    width: 65%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+.My-works-image-and-download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    width: 20%;
+}
+.My-work-order-details-headings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.My-works-image-and-download img{
+    width: 80%;
+    aspect-ratio: 1;
+    margin: 10px;
+    border-radius: 50%;
+}
+.My-works-image-and-download button{
+    width: 80%;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.My-work-order-details-item{
+    color: rgb(161, 161, 161);
+    text-align: right;
+}
+
+.My-work-order-details-span{
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    font-weight: 600;
+}
+.My-work-order-status-updation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    background-color: rgb(21, 21, 21);
+    padding: 10px;
+}
+.My-work-accept-btn{
+    border: 3px solid rgb(250, 250, 250);
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 5px;
+}
+.My-work-reject-btn{
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-top: 10px;
+    background-color: transparent;
+}
+.My-work-accept-btn:hover{
+    background-color: green;
+    border-color: green;
+}
+.My-work-reject-btn:hover{
+    background-color: red;
+    border-color: red;
+}
+.My-work-caution-notice{
+    font-size: smaller;
+    font-style: italic;
+    font-weight: 400;
+    color: orange;
+    height: 30%;
+}
+.My-work-ckeckbox-label{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: small;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+.My-work-ckeckbox-label-red{
+    color: rgb(237, 8, 8);
+    font-style: italic;
+    font-size: small;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+.My-work-customer-address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+.My-work-customer-address-item{
+    font-size: large;
+    color: rgb(158, 239, 29);
+    margin-left:10px;
+}
+.My-work-customer-address-heading{
+    font-size: x-large;
+    color: rgb(231, 138, 8);
+    margin-left: 10px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+
+@media(max-width:1265px){
+    .My-work-EachOrders{
+    margin-left: 70px;
+    width: 100%;
+}
+}
+
+
+@media(max-width:1065px){
+    .My-work-EachOrders{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.My-work-image-and-details{
+    width: 90%;
+}
+.My-works-image-and-download{
+    width: 100%;
+    height: 200px;
+}
+.My-work-order-status-updation{
+    width: 100%;
+}
+.My-works-image-and-download img{
+    width: 100px;
+}
+.My-works-image-and-download button{
+    width: 40%;
+}
+}
+
+@media(max-width:678px){
+ 
+
+.My-works-accepted-works-btn{
+    width: 45%;
+}
+.My-works-req-works-btn{
+    width: 45%;
+}
+.My-works-accepted-works-btn-active{
+    width: 45%;
+}
+.My-works-req-works-btn-active{
+    width: 45%;
+}
+}
+
+@media(max-width:500px){
+    .My-work-EachOrders{
+    margin-left: 0;
+    width: 100%;
+}
+.My-works-image-and-download button{
+    width: 80%;
+}}

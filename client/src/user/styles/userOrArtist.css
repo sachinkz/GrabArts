@@ -1,0 +1,88 @@
+.userOrArtist{
+    margin-top: -60px;
+    height: 100vh;
+    background-color: black;
+}
+.userOrArtist-btns{
+    display: flex;
+    flex-direction: column;
+}
+.userOrArtist-each-btn{
+    background-color: transparent;
+    border: 5px solid white;
+    color: white;
+    font-weight: 800;
+    border-radius: 10px;
+    height: 60px;
+}
+.userOrArtist-each-btn:hover{
+    background-color: white;
+    color: black;
+}
+.userOrArtist-heading{
+  font-family: monoton ,sans-serif;
+    color: rgb(255, 255, 255);
+}
+.userOrArtist-label{
+    color: rgb(144, 143, 143);
+    font-style: italic;
+}
+.userOrArtist-back-btn{
+    color: white;
+    border: 2px solid white ;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 6px 10px 10px 6px ;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+
+.Artist-back-btn{
+  color: black;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+.slideInFromRight-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Active state of the entering component during animation */
+.slideInFromRight-enter-active {
+  transition: all 300ms ease;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* State of the entering component after animation */
+.slideInFromRight-enter-done {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Initial state of the exiting component */
+.slideInFromRight-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Active state of the exiting component during animation */
+.slideInFromRight-exit-active {
+  transition: all 300ms ease;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* State of the exiting component after animation */
+.slideInFromRight-exit-done {
+  transform: translateX(100%);
+  opacity: 0;
+}

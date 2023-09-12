@@ -1,0 +1,85 @@
+
+.logospace{
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+}
+.circle1{
+    background-color: rgba(0, 0, 255, 0.836);
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    position: absolute;
+    left: 58px;
+}
+.circle2{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 80px;
+    top: 8px;
+    background-color: rgba(141, 23, 237, 0.774);
+    border-radius: 16px;
+}
+.circle3{
+     position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 60px;
+    bottom: 35px;
+    background-color: rgba(235, 168, 12, 0.795);
+    border-radius: 12px;
+}
+.circle4{
+     position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 60px;
+    top: 30px;
+    background-color: rgba(230, 15, 101, 0.874);
+    border-radius: 11px;
+}
+.circle5{
+     position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 50px;
+    top: 8px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 4px;
+}
+.circle6{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: 100px;
+    bottom: 20px;
+    background-color: rgb(255, 0, 102);
+    border-radius: 3px;
+}
+.circle7{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    right: 50px;
+    bottom: 26px;
+    background-color: rgb(255, 179, 0);
+    border-radius: 2px;
+}
+.circle8{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    right: 110px;
+    bottom: 28px;
+    background-color: rgb(187, 12, 235);
+    border-radius: 2px;
+}
+.heading{
+    z-index: 1;
+}

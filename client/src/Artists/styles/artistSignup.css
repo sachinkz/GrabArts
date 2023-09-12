@@ -1,0 +1,164 @@
+.artist-page{
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -60px;
+}
+@media(max-width:500px){
+
+}
+.artist-signupPage{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+
+
+.artist-signupItems{
+    border: solid rgb(114, 110, 110);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+
+.artist-signupForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.artist-loginBtn{
+    height: 40px;
+    width: 220px;
+    margin-top: 15px;
+    max-width: 300px ;
+    min-width: 150px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    font-weight: 800;
+    cursor: pointer;   
+
+}
+.artist-loginBtn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+.artist-signUpBtn{
+    margin: 20px;
+    height: 40px;
+    width: 220px;
+    max-width: 300px ;
+    min-width: 150px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    font-weight: 800;
+    cursor: pointer;   
+
+}
+.artist-signUpBtn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+input[type="text"] {
+  color: rgb(250, 213, 3);
+  border-color: wheat;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 13px;
+
+  letter-spacing: 2px;
+}
+input[type="number"] {
+  color: rgb(250, 213, 3);
+  border-color: wheat;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+input[type="email"] {
+  color: rgb(250, 213, 3);
+  border-color: wheat;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+
+input[type="password"] {
+  color: rgb(250, 213, 3);
+  border-color: wheat;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.name{
+    height: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-family: codystar;
+    color: white;
+}
+
+.artist-medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 10px;
+    width: 100%;
+}
+
+.social{
+    width: 25px;
+    cursor: pointer;   
+    color: rgb(0, 0, 0);
+}
+.social:hover{
+    font-size: larger;
+    position: relative;
+}
+
+.artist-head{
+    margin-bottom: 15px;
+    font-size:15px;
+    color: black;
+}

@@ -3,12 +3,13 @@ import PricingMain from "../components/Verification/PricingMain"
 import ArtistAddress from "../components/Verification/ArtistAddress"
 import { AuthContext } from '../../shared/contexts/AuthContext'
 import axios from 'axios'
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 
 function ArtistVerification() {
   const [pricing, setPricing] = useState()
   const [artistAddress, setArtistAddress] = useState()
   const auth=useContext(AuthContext)
-
+  const history=useHistory()
 
   useEffect(() => {
     if (pricing, artistAddress)
@@ -26,7 +27,9 @@ function ArtistVerification() {
             headers: { Authorization: auth.artistData.token },
           }
         )
-        .then((res) => console.log(res.data))
+        .then((res) =>{
+            history.push("/")
+        })
     }
   },[pricing,artistAddress,auth])
 

@@ -28,7 +28,10 @@ function MessagesPage() {
       })
   }, [artistId])
 
-const getSocketMessages = () => {
+
+
+
+useEffect(() => {
   socket.on("getMessage", ({ sender, message }) => {
     console.log(sender, message)
     setMessages((prevMessages) => [
@@ -36,14 +39,10 @@ const getSocketMessages = () => {
       { message: message, sender: sender },
     ])
   })
-}
-
-useEffect(() => {
-  getSocketMessages()
   return () => {
     socket.off("getMessage")
   }
-}, [getSocketMessages])
+}, [])
 
 
   

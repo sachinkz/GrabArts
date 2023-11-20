@@ -28,14 +28,9 @@ const ArtistItems = (props) => {
           />
           <div className="artist-item__info">
             <h2>
-              {props.fname}
+              {props.fname+' '+props.lname}
               <i className="bx bxs-badge-check bx-tada bx-rotate-270"></i>
             </h2>
-
-            <h6>Pricing:</h6>
-            <h6>
-              Rating: <i className="fa-regular fa-star"></i>
-            </h6>
           </div>
         </div>
         <div className="artistsworkscontainer">

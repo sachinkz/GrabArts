@@ -34,7 +34,7 @@ const TopArtists = () => {
           {topten &&
             topten.map(
               (user, i) =>
-                user.isTopten && (
+                user.isVerified && (
                   <ArtistItems
                     key={i}
                     artistId={user._id}

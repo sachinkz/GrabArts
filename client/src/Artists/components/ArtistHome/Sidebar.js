@@ -13,6 +13,12 @@ const Sidebar = (props) => {
     history.push(`/${link}`)
   }
 
+  const handleLogout=(e)=>{
+    auth.artistLogOut()
+    redirect(e,'')
+  }
+  
+
   return (
     <div className="aHome-navlinks">
       <div className="aHome-navlinks-topitems">
@@ -33,12 +39,6 @@ const Sidebar = (props) => {
           <div className="aHome-navlinks-eachitems">
             <i className="bx bx-message-square-dots aHome-navlinks-icons"></i>
             <h2 className="aHome-navlinks-items">MESSAGES</h2>
-          </div>
-        </Link>
-        <Link className="aHome-navlinks-items-link">
-          <div className="aHome-navlinks-eachitems">
-            <i className="bx bx-notification aHome-navlinks-icons"></i>
-            <h2 className="aHome-navlinks-items">NOTIFICATIONS</h2>
           </div>
         </Link>
         <div onClick={props.showPost} className="aHome-navlinks-items-link">
@@ -67,13 +67,12 @@ const Sidebar = (props) => {
         </Link>
       </div>
       <Link
-        onClick={auth.artistLogOut}
-        href="/artist-auth"
+        onClick={(e)=>handleLogout(e)}
         className="aHome-navlinks-items-link"
       >
         <div className="aHome-navlinks-bottomitems">
           <i className="bx bx-cog aHome-navlinks-icons"></i>
-          <h2 className="aHome-navlinks-items">SETTINGS</h2>
+          <h2 className="aHome-navlinks-items">LOGOUT</h2>
         </div>
       </Link>
     </div>

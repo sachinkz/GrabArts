@@ -148,10 +148,13 @@ function Signup() {
         lname: datas.lname,
         email: datas.email,
         password:datas.password
-        }
+      }
     }else{
+      e.preventDefault();
       signupDetails=values
     }
+    console.log(signupDetails)
+
     axios
       .post(process.env.REACT_APP_BACKEND_URL+"/users/signup", signupDetails)
       .then((response) => {

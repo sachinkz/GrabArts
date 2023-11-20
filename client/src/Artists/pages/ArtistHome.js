@@ -16,6 +16,7 @@ const socket = io("http://localhost:8900")
 
 function ArtistHome() {
   const [feeds, setFeeds] = useState()
+  const [artistNames, setArtistNames] = useState()
   const [showCreatePost, setShowCreatePost] = useState(false)
   const auth=useContext(AuthContext)
    
@@ -39,13 +40,30 @@ function ArtistHome() {
         console.log(err)
       })
   }, [auth])
+
+
+  const getArtistNames = useCallback(() => {
+    axios
+      .get(process.env.REACT_APP_BACKEND_URL + `/artists/artist-names`, {
+        headers: {
+          Authorization: auth.artistData.token,
+        },
+      })
+      .then((datas) => {
+        setArtistNames(datas.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }, [auth])
     
 
-
+  
 
     useEffect(() => {
       getArtistPosts()
-    }, [getArtistPosts, auth])
+      getArtistNames()
+    }, [getArtistPosts,getArtistNames, auth])
 
   
   
@@ -98,6 +116,7 @@ function ArtistHome() {
       {showCreatePost && <FileInput close={hidePost} />}
       <Sidebar showPost={showPost} />
       <FeedsSection
+        artistNames={artistNames}
         feeds={feeds}
         postComment={postComment}
         likePost={likePost}

@@ -39,7 +39,7 @@ function PostDetails(props) {
           <button className="aPost-back-btn" onClick={props.backPage}>
             <i className="bx bxs-left-arrow"></i>
           </button>
-          <h4>create New Post</h4>
+          <h4 className='aPost-post-box-heading'>create New Post</h4>
           <button onClick={createPost} className="aPost-post-btn" type="submit">
             POST
           </button>
@@ -55,9 +55,8 @@ function PostDetails(props) {
             )}
           </div>
           <div className='aPost-caption-input'>
-            <label htmlFor="">add a caption </label>
             <textarea onChange={e=>setCaption(e.target.value)} type="text" placeholder='add a caption' className='aPost-caption-input-field' />
-          <h6 className='aPost-caption-input-username'>@{ auth.artistData.fname }</h6>
+          <h6 className='aPost-caption-input-username'>@{ auth.artistData.fname}</h6>
           </div>
         </div>
       </label>

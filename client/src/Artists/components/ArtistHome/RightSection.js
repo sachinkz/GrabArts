@@ -66,7 +66,7 @@ const RightSection = (props) => {
                       src={user.image}
                       alt="dp"
                     />
-                    {user.isTopten && (
+                    {user.isVerified && (
                       <i className="bx bxs-badge-check bx-tada bx-rotate-270"></i>
                     )}
                     <h3

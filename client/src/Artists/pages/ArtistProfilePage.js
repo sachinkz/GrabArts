@@ -36,7 +36,7 @@ function ArtistProfilePage() {
     <React.Fragment>
       <div className="aProfile-main-div">
         <Sidebar />
-        <ArtistDetails profile={loadedProfile} />
+        <ArtistDetails getProfile={getArtistProfile} profile={loadedProfile} />
         <PostDisplay profile={loadedProfile} />
       </div>
     </React.Fragment>

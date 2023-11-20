@@ -71,8 +71,8 @@ function Login() {
 
 
   
-  const submitHandler = useCallback(() => {
-
+  const submitHandler = useCallback((e) => {
+    
     let loginDetails
 
     if (datas)
@@ -83,6 +83,7 @@ function Login() {
       }
     } else
     {
+      e.preventDefault()
       loginDetails=values
     }
 

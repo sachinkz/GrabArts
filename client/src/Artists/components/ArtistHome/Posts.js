@@ -40,7 +40,7 @@ const Posts = (props) => {
               <h3 className="aHome-user-name">
                 {post.artistId.fname + " " + post.artistId.lname}
               </h3>
-              {post.artistId.isTopten && (
+              {post.artistId.isVerified && (
                 <i className="bx bxs-badge-check bx-tada bx-rotate-270"></i>
               )}
             </div>
@@ -49,7 +49,7 @@ const Posts = (props) => {
             </div>
             <div className="aHome-feed-footer">
               <i
-                className="bx bx-heart"
+                className="bx bxs-heart"
                 style={
                   post.likes.length !== 0 &&
                   post.likes.find(

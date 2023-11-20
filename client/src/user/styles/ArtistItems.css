@@ -12,7 +12,8 @@
   border: none;
 }
 .artist-item__info{
-  text-align: center;
+  margin-left: 20px;
+  text-align: left;
   width: 100%;
 }
 .artistItem-container{
@@ -29,8 +30,8 @@
 
 
 .artist-item__image {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   aspect-ratio: 1;
   margin-left: 6px;

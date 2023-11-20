@@ -24,6 +24,8 @@ router.use(checkAuth);  //Autherized routes below the authorization middleware
 
 router.get("/home", artistController.artistHomePage)
 
+router.get("/artist-names", artistController.getArtistNames)
+
 router.get("/suggestions", artistController.suggestedUsers)
 
 router.post("/post", fileUpload.single("image"), artistController.createPost)
@@ -38,7 +40,7 @@ router.get('/works/:artistId', artistController.getAllWorks)
 
 router.get('/accept/:orderId', artistController.acceptWork) 
 
-router.get("/verification", artistController.verifyArtist) 
+router.post("/verification", artistController.verifyArtist) 
 
 
 module.exports = router;

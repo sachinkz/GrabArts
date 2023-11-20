@@ -1,15 +1,26 @@
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import { useHistory } from "react-router-dom"
 import "../../styles/ArtistDetails.css"
 import { AuthContext } from '../../../shared/contexts/AuthContext'
 import axios from 'axios'
 
-function ArtistDetails({ profile }) {
+function ArtistDetails({ profile,getProfile }) {
 
   const auth=useContext(AuthContext)
   const history=useHistory()
   const artistId = auth.artistData.artistId
-  
+
+
+  const followArtist = (e, id) => {
+    e.preventDefault()
+    axios
+      .get(process.env.REACT_APP_BACKEND_URL+`/artists/follow/${id}`, {
+        headers: { Authorization: auth.artistData.token },
+      })
+      .then((res) => {
+        getProfile()
+      })
+  }
 
   const goToMessage = () => {
 
@@ -29,8 +40,6 @@ function ArtistDetails({ profile }) {
     history.push('/verify-account')
   }
   
-  console.log(profile)
-
   return (
     <div className="profile-top">
       <div class="profile-picture">
@@ -40,11 +49,11 @@ function ArtistDetails({ profile }) {
         <h1>{profile && profile.fname + " " + profile.lname}</h1>
         <div className="follow-info">
           <div className="followers">
-            <span>10k</span>
+            <span>{profile && profile.followers.length}</span>
             <strong>Followers</strong>
           </div>
           <div className="following">
-            <span>100</span>
+            <span>{profile && profile.following.length}</span>
             <strong>Following</strong>
           </div>
         </div>
@@ -53,7 +62,7 @@ function ArtistDetails({ profile }) {
         {profile && profile._id !== artistId ? (
           <div className="aProfile-all-buttons">
             <div>
-              <button className="aProfile-follow-button">Follow</button>
+              <button  onClick={(e) => followArtist(e, profile._id)} className="aProfile-follow-button">{profile && profile.followers.includes(auth.artistData.artistId)?'Following':'Follow'}</button>
             </div>
             <div>
               <button onClick={goToMessage} className="aProfile-follow-button">

@@ -89,7 +89,9 @@ function ArtistLogin() {
           <a href={"/artist-signup"}>
             <button className="artist-signUpBtn">CREATE ACCOUNT</button>
           </a>
-          <button className="artist-signUpBtn">BECOME AN ARTIST</button>
+          <a href='/signup'>
+          <button className="artist-signUpBtn">PURCHASE ART</button>
+          </a>
         </div>
       </div>
     </React.Fragment>

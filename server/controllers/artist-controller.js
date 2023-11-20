@@ -241,12 +241,13 @@ const followArtist = async(req,res,next) => {
   const artistToFollow = req.params.artistId
   const loggedArtist = req.artistData.artistId
 
-  let toFollow
-  let follower
+  let toFollow;
+  let follower;
+  let alreadyFollowing;
   try
   {
     toFollow = await Artist.findById(artistToFollow)   
-    let alreadyFollowing = toFollow.followers.find(id => id.equals(loggedArtist))
+    alreadyFollowing = toFollow.followers.find(id => id.equals(loggedArtist))
     if(!alreadyFollowing){
       toFollow.followers.push(loggedArtist)
       await toFollow.save()
@@ -264,7 +265,7 @@ const followArtist = async(req,res,next) => {
   } catch {
     return next(new HttpError('something went wrong could not follow the artist'),500)
   }
-  res.json({ message:'followed'})
+  alreadyFollowing?res.json({follow:false}):res.json({follow:true})
 }
 
 
@@ -329,12 +330,20 @@ const acceptWork=async( req,res,next)=> {
 }
 
 const verifyArtist = async (req, res, next) => {
+  
   const { pricing, artistAddress } = req.body
   const artistId = req.artistData.artistId
-  
+  console.log(pricing)
+
+  const createdPricing = new Pricing({
+    artistId,
+    styles:pricing
+  })
   try
   {
     let updated = await Artist.findByIdAndUpdate(artistId, { isVerified: true })
+    createdPricing.save();
+
     console.log(updated)
 
   } catch {
@@ -343,6 +352,26 @@ const verifyArtist = async (req, res, next) => {
   res.json({message:'done'})
 }
 
+
+
+const getArtistNames=async(req,res,next)=>{
+
+  let artistNames;
+
+  try{
+    let data=await Artist.find({})
+    artistNames = data.map((artist) => ({
+      _id:artist._id,
+      fname: artist.fname,
+      lname: artist.lname,
+      image: artist.image,
+      isVerified: artist.isVerified,
+    }));
+  }catch(err){
+    return next(new HttpError('something went wrong ',500))  
+  }
+  res.json(artistNames)
+}
 
 exports.artistSignUp = artistSignUp;
 exports.artistLogin = artistLogin;
@@ -355,3 +384,4 @@ exports.createPricing = createPricing
 exports.getAllWorks = getAllWorks
 exports.acceptWork = acceptWork
 exports.verifyArtist = verifyArtist
+exports.getArtistNames = getArtistNames

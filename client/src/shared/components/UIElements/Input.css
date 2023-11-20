@@ -5,6 +5,7 @@
 }
 .common-input-field{
     background-color: transparent;
+    color: gray;
     height: 40px;
     width: 250px;
     max-width: 300px ;

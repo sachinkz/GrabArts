@@ -32,8 +32,9 @@ io.on('connection', (socket) => {
         const user = findUser(receiver)
         if (user)
         {
-            io.to(user.socketId).emit("getMessage", { sender: sender, message: message })
-            console.log(sender,message,)
+            io.to(user.userId).emit("getMessage", { sender: sender, message: message })
+            console.log(user)
+            console.log(' sender : '+sender,' message : '+message,)
       } else {
         console.log(`Receiver user ${receiver} not found.`)
       }

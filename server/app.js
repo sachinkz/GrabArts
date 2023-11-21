@@ -10,7 +10,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://glowing-macaron-1bfbdb.netlify.app/",
     allowedHeaders: ["Authorization", "Content-Type"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     preflightContinue: false,

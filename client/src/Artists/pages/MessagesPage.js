@@ -5,7 +5,7 @@ import { AuthContext } from '../../shared/contexts/AuthContext'
 import Recent from '../components/Chatting/RecentChats'
 import Message from '../components/Chatting/Message'
 
-const socket = io("http://localhost:8900")
+const socket = io("https://ga-socket.onrender.com")
 
 function MessagesPage() {
   const auth = useContext(AuthContext)

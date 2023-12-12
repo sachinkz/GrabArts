@@ -12,7 +12,7 @@ function ArtistVerification() {
   const history=useHistory()
 
   useEffect(() => {
-    if (pricing, artistAddress)
+    if (pricing && artistAddress)
     {
       const datas = {
         pricing,
@@ -31,7 +31,7 @@ function ArtistVerification() {
             history.push("/")
         })
     }
-  },[pricing,artistAddress,auth])
+  },[pricing,artistAddress,auth,history])
 
   const getPricing = (prices) => {
     setPricing(prices)

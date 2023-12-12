@@ -83,7 +83,7 @@ function ArtistSignup() {
     e.preventDefault()
 
     axios
-      .post("http://localhost:5000/api/artists/signup", values)
+      .post(`${process.env.REACT_APP_BACKEND_URL}/artists/signup`, values)
       .then((response) => {
         console.log(response.data)
         auth.artistLogIn(response.data)

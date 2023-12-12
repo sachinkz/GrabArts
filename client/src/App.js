@@ -6,23 +6,6 @@ import { AuthContext } from "./shared/contexts/AuthContext"
 import { useAuth } from "./shared/hooks/Auth-hook"
 import LoadingSpinner from './shared/components/UIElements/LoadingSpinner';
 
-// import ArtistProfile from './user/pages/ArtistProfile';
-// import AboutUs from './user/pages/AboutPage';
-// import HomePage from './user/pages/HomePage';
-// import Login from './user/pages/LoginPage';
-// import OrderPage from './user/pages/OrderPage';
-// import ViewPosts from './user/pages/ViewPosts';
-// import SignupPage from './user/pages/SignupPage';
-// import ArtistHome from './Artists/pages/ArtistHome';
-// import ArtistLogin from './Artists/pages/ArtistLogin';
-// import ArtistSignup from './Artists/pages/ArtistSignup';
-// import ArtistProfilePage from './Artists/pages/ArtistProfilePage';
-// import MessagesPage from './Artists/pages/MessagesPage';
-// import UserOrArtist from './user/pages/UserOrArtist';
-// import DeliveryDetails from './user/components/OrderPage/DeliveryDetails';
-// import OrderHistory from './user/pages/OrderHistory';
-// import MyWorks from './Artists/pages/MyWorks';
-// import ArtistVerification from './Artists/pages/ArtistVerification';
 
 const ArtistProfile = lazy(() => import("./user/pages/ArtistProfile"))
 const AboutUs = lazy(() => import("./user/pages/AboutPage"))

@@ -8,7 +8,7 @@ import FileInput from '../components/CreatePost/FileInput'
 import Backdrop from '../../shared/components/UIElements/Backdrop'
 import { AuthContext } from '../../shared/contexts/AuthContext'
 
-const socket = io("http://localhost:8900")
+const socket = io("https://ga-socket.onrender.com")
 
 
 

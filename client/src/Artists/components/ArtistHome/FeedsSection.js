@@ -47,7 +47,7 @@ const FeedsSection = (props) => {
           <ul className="aHome-search-results">
             {filtered.map((artist) => {
               return <li onClick={(e) => toArtistProfile(e, artist._id)} className="aHome-search-each-results" key={artist._id}>
-                <img src={artist.image} className="aHome-search-result-img"></img>
+                <img src={artist.image} alt="some picss" className="aHome-search-result-img"></img>
                 <h6 className="aHome-search-result-name">{artist.fname} {artist.lname}</h6>
                 {artist.isVerified && (
                   <i className="aHome-search-results-badge bx bxs-badge-check bx-tada bx-rotate-270"></i>

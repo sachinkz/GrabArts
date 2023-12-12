@@ -46,7 +46,7 @@ function UserOrArtist() {
         unmountOnExit
       >
         <div>
-          <i onClick={closeLogin} class="bx bxs-left-arrow userOrArtist-back-btn ">
+          <i onClick={closeLogin} className="bx bxs-left-arrow userOrArtist-back-btn ">
             {" "}
             back
           </i>
@@ -61,7 +61,7 @@ function UserOrArtist() {
         unmountOnExit
       >
         <div>
-          <i onClick={closeLogin} class="bx bxs-left-arrow Artist-back-btn ">
+          <i onClick={closeLogin} className="bx bxs-left-arrow Artist-back-btn ">
             {" "}
             back
           </i>

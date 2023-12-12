@@ -10,7 +10,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: "https://grab-arts.netlify.app/",
+    origin: "https://grab-arts.netlify.app",
     allowedHeaders: ["Authorization", "Content-Type"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     preflightContinue: false,

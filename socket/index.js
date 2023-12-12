@@ -1,6 +1,6 @@
 const io = require('socket.io')(8900, {
     cors: {
-        origin:'https://grab-arts.netlify.app/'
+        origin:'https://grab-arts.netlify.app'
     }
 })
 
